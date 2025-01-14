@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="flex gap-4 text-sm ">
           <button className="flex bg-primary uppercase items-center text-white rounded inknut">
             <a 
-              href='https://greek-tasty.order.app.hd.digital/menus'> 
+              href='https://greek-tasty.order.app.hd.digital/menus' target="_blank"> 
               Jetzt bestellen
               </a>
             
