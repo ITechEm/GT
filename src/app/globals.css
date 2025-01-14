@@ -90,6 +90,14 @@ div.tabs > *.active{
     font-family: 'inika';
 }
 
+@font-face {
+    font-family: 'introRust';
+    src: url(fonts/IntroRustG-Base2Line.otf);
+}
+.introRust {
+    font-family: 'introRust';
+}
+
 /*hidding long text*/
 .trimmedbutton {
     width: 100px;
