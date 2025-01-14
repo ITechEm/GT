@@ -1,9 +1,7 @@
 'use client';
-import DeleteButton from "@/components/DeleteButton";
-import Left from "@/components/icons/Left";
-import EditableImage from "@/components/layout/EditableImage";
+
+
 import MenuItemForm from "@/components/layout/MenuItemForm";
-import UserTabs from "@/components/layout/UserTabs";
 import {useProfile} from "@/components/UseProfile";
 import Link from "next/link";
 import {redirect, useParams} from "next/navigation";
