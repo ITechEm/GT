@@ -6,7 +6,6 @@ export default function CategoriesPage() {
 
   const [categoryName, setCategoryName] = useState('');
   const [categories, setCategories] = useState([]);
-  const {loading:profileLoading, data:profileData} = useProfile();
   const [editedCategory, setEditedCategory] = useState(null);
 
   useEffect(() => {
