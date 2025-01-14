@@ -15,11 +15,8 @@ export default function MenuItemTile({onAddToCart, ...item}) {
       <p className="text-gray-500 text-sm truncate">
         {description}
       </p>
-      <AddToCartButton
-        image={image}
- 
-        
-      />
+      
+    
     </div>
   );
 }
