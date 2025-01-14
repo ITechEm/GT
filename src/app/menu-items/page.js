@@ -7,7 +7,7 @@ import {useEffect, useState} from "react";
 export default function MenuItemsPage() {
 
   const [menuItems, setMenuItems] = useState([]);
-  const {loading, data} = useProfile();
+
 
   useEffect(() => {
     fetch('/api/menu-items').then(res => {

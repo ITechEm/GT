@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 export default function NewMenuItemPage() {
 
   const [redirectToItems, setRedirectToItems] = useState(false);
-  const {loading, data} = useProfile();
+
 
   async function handleFormSubmit(ev, data) {
     ev.preventDefault();
