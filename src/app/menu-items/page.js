@@ -1,7 +1,5 @@
 'use client';
-import Right from "@/components/icons/Right";
-import UserTabs from "@/components/layout/UserTabs";
-import {useProfile} from "@/components/UseProfile";
+
 import Image from "next/image";
 import Link from "next/link";
 import {useEffect, useState} from "react";

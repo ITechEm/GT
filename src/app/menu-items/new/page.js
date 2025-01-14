@@ -1,5 +1,5 @@
 'use client';
-import {useProfile} from "@/components/UseProfile";
+
 import Link from "next/link";
 import {redirect} from "next/navigation";
 import {useState} from "react";
