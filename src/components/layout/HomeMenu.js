@@ -1,6 +1,5 @@
 'use client';
 import SectionHeaders from "@/components/layout/SectionHeaders";
-import MenuItem from "@/components/menu/MenuItem";
 import Image from "next/image";
 import {useEffect, useState} from "react";
 
@@ -23,9 +22,7 @@ export default function HomeMenu() {
           } />
       </div>
       <div className="grid sm:grid-cols-3 gap-4">
-        {bestSellers?.length > 0 && bestSellers.map(item => (
-          <MenuItem key={item._id} {...item} />
-        ))}
+       
       </div>
       <div className="relative mt-14 rounded">
         <Image src={'/image_header_rabatt.png'} width={870} height={870}  alt={'mianpage'} />
