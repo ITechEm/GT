@@ -27,7 +27,7 @@ export default function HomeMenu() {
           <MenuItem key={item._id} {...item} />
         ))}
       </div>
-      <div className="relative">
+      <div className="relative mt-14 rounded">
         <Image src={'/image_header.png'} width={870} height={870}  alt={'mianpage'} />
       </div>
     </section>

@@ -17,9 +17,8 @@ export default function MenuItemTile({onAddToCart, ...item}) {
       </p>
       <AddToCartButton
         image={image}
-        hasSizesOrExtras={hasSizesOrExtras}
-        onClick={onAddToCart}
-        basePrice={basePrice}
+ 
+        
       />
     </div>
   );
