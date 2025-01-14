@@ -28,7 +28,7 @@ export default function HomeMenu() {
         ))}
       </div>
       <div className="relative mt-14 rounded">
-        <Image src={'/image_header.png'} width={870} height={870}  alt={'mianpage'} />
+        <Image src={'/image_header_rabatt.png'} width={870} height={870}  alt={'mianpage'} />
       </div>
     </section>
   );

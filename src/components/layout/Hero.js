@@ -24,7 +24,7 @@ export default function Hero() {
           </button>
           <button className="flex bg-primary uppercase items-center text-white rounded inknut">
             <a 
-              href='https://greek-tasty.order.app.hd.digital/menus'> 
+              href='tel:+4923522688115'> 
               Jetzt anrufen
               </a>
             
@@ -32,8 +32,8 @@ export default function Hero() {
        
         </div>
       </div>
-      <div className="relative md:block md:ml-20 item-center">
-        <Image src={'/online.png'} width={325} height={325} alt={'pizza'} />
+      <div className="relative hidden md:block md:ml-20">
+        <Image src={'/food.jpg'} width={500} height={500} alt={'pizza'} />
       </div>
     </section>
   );
