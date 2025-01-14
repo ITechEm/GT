@@ -1,6 +1,4 @@
 'use client';
-
-
 import {useEffect, useState} from "react";
 import toast from "react-hot-toast";
 
@@ -23,63 +21,7 @@ export default function CategoriesPage() {
     });
   }
 
-  async function handleCategorySubmit(ev) {
-    ev.preventDefault();
-    const creationPromise = new Promise(async (resolve, reject) => {
-      const data = {name:categoryName};
-      if (editedCategory) {
-        data._id = editedCategory._id;
-      }
-      const response = await fetch('/api/categories', {
-        method: editedCategory ? 'PUT' : 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-      setCategoryName('');
-      fetchCategories();
-      setEditedCategory(null);
-      if (response.ok)
-        resolve();
-      else
-        reject();
-    });
-    await toast.promise(creationPromise, {
-      loading: editedCategory
-                 ? 'Updating category...'
-                 : 'Creating your new category...',
-      success: editedCategory ? 'Category updated' : 'Category created',
-      error: 'Error, sorry...',
-    });
-  }
 
-  async function handleDeleteClick(_id) {
-    const promise = new Promise(async (resolve, reject) => {
-      const response = await fetch('/api/categories?_id='+_id, {
-        method: 'DELETE',
-      });
-      if (response.ok) {
-        resolve();
-      } else {
-        reject();
-      }
-    });
-
-    await toast.promise(promise, {
-      loading: 'Deleting...',
-      success: 'Deleted',
-      error: 'Error',
-    });
-
-    fetchCategories();
-  }
-
-  if (profileLoading) {
-    return 'Loading user info...';
-  }
-
-  if (!profileData.admin) {
-    return 'Not an admin';
-  }
 
   return (
     <section className="mt-8 max-w-2xl mx-auto">
