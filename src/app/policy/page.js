@@ -1,7 +1,43 @@
 'use client';
 import SectionHeaders from "@/components/layout/SectionHeaders";
 import {useEffect, useState} from "react";
+import {signOut, useSession} from "next-auth/react";
+import Link from "next/link";
+import {useContext} from "react";
+
+
+function AuthLinks({ status, userName }) {
+  if (status === 'authenticated') {
+    return (
+      <>
+        <Link href={'/profile'} className="whitespace-nowrap">
+          <h1 className="text-black inknut trimmedbutton">Hi, {userName}</h1>
+        </Link>
+        <button
+          onClick={() => signOut({ callbackUrl: '/' })}
+          className="bg-primary rounded text-white px-8 py-2 inknut">
+          Logout
+        </button>
+      </>
+    );
+  }
+  if (status === 'unauthenticated') {
+    return (
+      <>
+        <Link href={'/login'} className="text-black inknut">Privacy Policy</Link>
+      </>
+    );
+  }
+  return null; // Handle the default case
+}
 export default function Policy() {
+  const session = useSession();
+  const status = session?.status;
+  const userData = session.data?.user;
+  let userName = userData?.name || userData?.email;
+  if (userName && userName.includes(' ')) {
+    userName = userName.split(' ')[0];
+  }
   useEffect(() => {
     fetch('/api/policy').then(res => {
       res.json().then(categories => setCategories(categories))
@@ -10,10 +46,12 @@ export default function Policy() {
     return (
     
         <header>
-          <div className=" p-2 border-t  mt-12">
-
+          <div className="border-t  mt-12">
+            <nav className="mt-8">
+              <AuthLinks status={status} userName={userName}  maxLength={10}/>
+            </nav>
           </div>
-<h1><strong>Privacy Policy</strong></h1>
+
 <p>Last updated: January 01, 2025</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>

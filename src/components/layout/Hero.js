@@ -11,7 +11,7 @@ export default function Hero() {
           Küche!
           </span>
         </h2>
-        <p className="my-6 text-graylight">
+        <p className="my-6 text-graylight text-justify">
         Sie möchten nicht ausgehen? Dank unseres Mitrahmenservices können Sie unsere köstlichen Gerichte zu Hause genießen.
         </p>
         <div className="flex gap-4 text-sm ">

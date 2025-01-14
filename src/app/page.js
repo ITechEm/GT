@@ -13,35 +13,39 @@ export default function Home() {
           <SectionHeaders
             mainHeader={<a>Öffnungs<a className="text-primary">zeiten</a></a>}
           />
-          <table className="mt-6 gap-4">
-            <tbody class="gap-4 ">
-            <tr class="gap-4">
+          <table>
+            <tbody className="gap-4 ">
+            <a className="gap-4">
+                <th className="text-left text-white">Montag</th>
+                 <td><div className="text-white">Geschlossen</div></td>
+            </a>
+            <tr className="gap-4">
                 <th className="text-left">Montag</th>
-                  <td><div class="text-primary">Geschlossen</div></td>
+                  <td><div className="text-primary">Geschlossen</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Dienstag</th>
-                <td><div class=" text-primary">11:30 – 22:00</div></td>
+                <td><div className=" text-primary">11:30 – 22:00</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Mittwoch</th>
-                <td><div class="text-right text-primary">11:30 – 22:00</div></td>
+                <td><div className="text-right text-primary">11:30 – 22:00</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Donnerstag</th>
-                <td><div class="text-right text-primary">11:30 – 22:00</div></td>
+                <td><div className="text-right text-primary">11:30 – 22:00</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Freitag</th>
-                <td><div class="text-right text-primary">11:30 – 22:00</div></td>
+                <td><div className="text-right text-primary">11:30 – 22:00</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Samstag</th>
-                <td><div class="text-right text-primary">11:30 – 22:00</div></td>
+                <td><div className="text-right text-primary">11:30 – 22:00</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Sonntag</th>
-                <td><div class="text-right text-primary">14:00 – 22:00</div></td>
+                <td><div className="text-right text-primary">14:00 – 22:00</div></td>
             </tr>
             </tbody>
           </table>
@@ -50,35 +54,39 @@ export default function Home() {
           <SectionHeaders
             mainHeader={<a>Liefer<a className="text-primary">zeiten</a></a>}
           />
-          <table className="mt-6 gap-4">
-            <tbody class="gap-4 ">
-            <tr class="gap-4">
+          <table>
+            <tbody className="gap-4 ">
+            <a className="gap-4">
+                <th className="text-left text-white">Montag</th>
+                  <td><div className="text-white">Geschlossen</div></td>
+            </a>
+            <tr className="gap-4">
                 <th className="text-left">Montag</th>
-                  <td><div class="text-primary">Geschlossen</div></td>
+                  <td><div className="text-primary">Geschlossen</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Dienstag</th>
-                <td><div class=" text-primary">16:00 – 21:30</div></td>
+                <td><div className=" text-primary">16:00 – 21:30</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Mittwoch</th>
-                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+                <td><div className="text-right text-primary">16:00 – 21:30</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Donnerstag</th>
-                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+                <td><div className="text-right text-primary">16:00 – 21:30</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Freitag</th>
-                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+                <td><div className="text-right text-primary">16:00 – 21:30</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Samstag</th>
-                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+                <td><div className="text-right text-primary">16:00 – 21:30</div></td>
             </tr>
-            <tr class="regular">
+            <tr className="regular">
               <th className="text-left">Sonntag</th>
-                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+                <td><div className="text-right text-primary">16:00 – 21:00</div></td>
             </tr>
             </tbody>
           </table>
