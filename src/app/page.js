@@ -16,8 +16,8 @@ export default function Home() {
           <table>
             <tbody className="gap-4 ">
             <a className="gap-4">
-                <th className="text-left text-white">Montag</th>
-                 <td><div className="text-white">Geschlossen</div></td>
+                <th className="text-left text-white">................</th>
+                  <td><div className="text-white">.................</div></td>
             </a>
             <tr className="gap-4">
                 <th className="text-left">Montag</th>
@@ -57,8 +57,8 @@ export default function Home() {
           <table>
             <tbody className="gap-4 ">
             <a className="gap-4">
-                <th className="text-left text-white">Montag</th>
-                  <td><div className="text-white">Geschlossen</div></td>
+                <th className="text-left text-white">................</th>
+                  <td><div className="text-white">.................</div></td>
             </a>
             <tr className="gap-4">
                 <th className="text-left">Montag</th>

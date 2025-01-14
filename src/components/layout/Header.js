@@ -1,57 +1,11 @@
 'use client';
-import {CartContext} from "@/components/AppContext";
 import Bars2 from "@/components/icons/Bars2";
-import ShoppingCart from "@/components/icons/ShoppingCart";
-import {signOut, useSession} from "next-auth/react";
 import Link from "next/link";
-import {useContext, useState} from "react";
+import {useState} from "react";
 import Image from "next/image";
 
-function AuthLinks({ status, userName }) {
-  if (status === 'authenticated') {
-    return (
-      <>
-        <Link href={'/profile'} className="whitespace-nowrap">
-          <h1 className="text-black inknut trimmedbutton">Hi, {userName}</h1>
-        </Link>
-        <button
-          onClick={() => signOut({ callbackUrl: '/' })}
-          className="bg-primary rounded text-white px-8 py-2 inknut">
-          Logout
-        </button>
-      </>
-    );
-  }
-  if (status === 'unauthenticated') {
-    return (
-      // <>
-      //   <Link href={'/login'} className="text-black inknut">Login</Link>
-      //   <Link href={'https://greek-tasty.order.app.hd.digital/menus'} className="bg-primary rounded text-white px-8 py-2 inknut">
-      //   Online bestellen
-      //   </Link>
-      // </>
-      <>
-        <Link href={'/login'} className="text-black inknut">Login</Link>
-        <Link href={'/register'} className="bg-primary rounded text-white px-8 py-2 inknut">
-          Register
-        </Link>
-      </>
-    );
-  }
-  return null; // Handle the default case
-}
-
 export default function Header() {
-  const session = useSession();
-  const status = session?.status;
-  const userData = session.data?.user;
-  let userName = userData?.name || userData?.email;
-  const {cartProducts} = useContext(CartContext);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  if (userName && userName.includes(' ')) {
-    userName = userName.split(' ')[0];
-  }
-  
   return (
     
     <header>
@@ -76,7 +30,9 @@ export default function Header() {
           <Link href={'#opentime'}>Öffnungszeiten</Link>
           <Link href={'/#about'}>Über Uns</Link>
           <Link href={'/#contact'}>Kontakt</Link>
-          <AuthLinks status={status} userName={userName} maxLength={10}/>
+          <Link href={'https://greek-tasty.order.app.hd.digital/menus'} className="bg-primary rounded text-white px-8 py-2 inknut">
+        Online bestellen
+        </Link>
         </div>
       )}
       <div className="hidden md:flex items-center justify-between">
@@ -90,20 +46,11 @@ export default function Header() {
           <Link href={'/#about'}>Über Uns</Link>
           <Link href={'/#contact'}>Kontakt</Link>
         </nav>
-        {/* <nav className="flex items-center gap-4">
-          <AuthLinks status={status} userName={userName}  maxLength={10}/>
-          
-        </nav> */}
         <nav className="flex items-center gap-4">
-          <AuthLinks status={status} userName={userName}  maxLength={10}/>
-          <Link href={'/cart'} className="relative">
-            <ShoppingCart />
-            {cartProducts?.length > 0 && (
-              <span className="absolute -top-2 -right-4 bg-primary text-white text-xs py-1 px-1 rounded-full leading-3">
-            {cartProducts.length}
-          </span>
-            )}
-          </Link>
+        <Link href={'https://greek-tasty.order.app.hd.digital/menus'} className="bg-primary rounded text-white px-8 py-2 inknut">
+        Online bestellen
+        </Link>
+          
         </nav>
       </div>
     </header>
