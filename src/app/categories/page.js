@@ -25,7 +25,7 @@ export default function CategoriesPage() {
   return (
     <section className="mt-8 max-w-2xl mx-auto">
       
-      <form className="mt-8" onSubmit={handleCategorySubmit}>
+      <form className="mt-8">
         <div className="flex gap-2 items-end">
           <div className="grow">
             <label>
