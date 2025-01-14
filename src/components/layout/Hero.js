@@ -22,11 +22,18 @@ export default function Hero() {
               </a>
             
           </button>
+          <button className="flex bg-primary uppercase items-center text-white rounded inknut">
+            <a 
+              href='https://greek-tasty.order.app.hd.digital/menus'> 
+              Jetzt anrufen
+              </a>
+            
+          </button>
        
         </div>
       </div>
-      <div className="relative hidden md:block ml-20">
-        <Image src={'/food.jpg'} width={440} height={440} alt={'pizza'} />
+      <div className="relative md:block md:ml-20 item-center">
+        <Image src={'/online.png'} width={325} height={325} alt={'pizza'} />
       </div>
     </section>
   );

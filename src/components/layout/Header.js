@@ -67,7 +67,7 @@ export default function Header() {
           className="md:hidden p-4 bg-gray-200 rounded-lg mt-2 flex flex-col gap-2 text-center inknut">
           
           <Link href={'/menu'}>Speisekarte</Link>
-          <Link href={'/menu'}>Öffnungszeiten</Link>
+          <Link href={'#opentime'}>Öffnungszeiten</Link>
           <Link href={'/#about'}>Über Uns</Link>
           <Link href={'/#contact'}>Kontakt</Link>
           <AuthLinks status={status} userName={userName} maxLength={10}/>
@@ -80,7 +80,7 @@ export default function Header() {
         <nav className="flex items-center gap-4 inknut ml-15">            
                  
           <Link href={'/menu'}>Speisekarte</Link>
-          <Link href={'/menu'}>Öffnungszeiten</Link>
+          <Link href={'#opentime'}>Öffnungszeiten</Link>
           <Link href={'/#about'}>Über Uns</Link>
           <Link href={'/#contact'}>Kontakt</Link>
         </nav>

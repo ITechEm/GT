@@ -8,6 +8,82 @@ export default function Home() {
     <>
       <Hero />
       <HomeMenu />
+      <section className="text-center my-16 mt-12 mb-8" id="opentime">
+        <div className="inline-block">
+          <SectionHeaders
+            mainHeader={<a>Öffnungs<a className="text-primary">zeiten</a></a>}
+          />
+          <table className="mt-6 gap-4">
+            <tbody class="gap-4 ">
+            <tr class="gap-4">
+                <th className="text-left">Montag</th>
+                  <td><div class="text-primary">Geschlossen</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Dienstag</th>
+                <td><div class=" text-primary">11:30 – 22:00</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Mittwoch</th>
+                <td><div class="text-right text-primary">11:30 – 22:00</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Donnerstag</th>
+                <td><div class="text-right text-primary">11:30 – 22:00</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Freitag</th>
+                <td><div class="text-right text-primary">11:30 – 22:00</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Samstag</th>
+                <td><div class="text-right text-primary">11:30 – 22:00</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Sonntag</th>
+                <td><div class="text-right text-primary">14:00 – 22:00</div></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="mt-8 md:ml-20 inline-block">
+          <SectionHeaders
+            mainHeader={<a>Liefer<a className="text-primary">zeiten</a></a>}
+          />
+          <table className="mt-6 gap-4">
+            <tbody class="gap-4 ">
+            <tr class="gap-4">
+                <th className="text-left">Montag</th>
+                  <td><div class="text-primary">Geschlossen</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Dienstag</th>
+                <td><div class=" text-primary">16:00 – 21:30</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Mittwoch</th>
+                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Donnerstag</th>
+                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Freitag</th>
+                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Samstag</th>
+                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+            </tr>
+            <tr class="regular">
+              <th className="text-left">Sonntag</th>
+                <td><div class="text-right text-primary">16:00 – 21:30</div></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
       <section className="text-center my-16 mt-12 mb-8" id="about">
         <SectionHeaders
           subHeader={'Unsere Geschichte'}
