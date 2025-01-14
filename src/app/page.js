@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <HomeMenu />
-      {/* <section className="text-center my-16 mt-12 mb-8" id="opentime">
+      <section className="text-center my-16 mt-12 mb-8" id="opentime">
         <div className="inline-block">
           <SectionHeaders
             mainHeader={<a>Öffnungs<a className="text-primary">zeiten</a></a>}
@@ -83,7 +83,7 @@ export default function Home() {
             </tbody>
           </table>
         </div>
-      </section> */}
+      </section>
       <section className="text-center my-16 mt-12 mb-8" id="about">
         <SectionHeaders
           subHeader={'Unsere Geschichte'}
