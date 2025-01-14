@@ -4,19 +4,11 @@ import {useEffect, useState} from "react";
 
 export default function CategoriesPage() {
 
-  const [categories, setCategories] = useState([]);
+  const [setCategories] = useState([]);
 
   useEffect(() => {
     fetchCategories();
   }, []);
-
-  function fetchCategories() {
-    fetch('/api/categories').then(res => {
-      res.json().then(categories => {
-        setCategories(categories);
-      });
-    });
-  }
 
   return (
     <section className="mt-8 max-w-2xl mx-auto">
@@ -32,7 +24,7 @@ export default function CategoriesPage() {
       </form>
       <div>
         <h2 className="mt-8 text-sm text-gray-500">Existing categories</h2>
-        {categories?.length > 0 && categories.map(c => (
+       
           <div
             key={c._id}
             className="bg-gray-100 rounded-xl p-2 px-4 flex gap-1 mb-1 items-center">
@@ -41,7 +33,7 @@ export default function CategoriesPage() {
             </div>
             
           </div>
-        ))}
+        
       </div>
     </section>
   );
