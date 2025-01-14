@@ -24,10 +24,16 @@ function AuthLinks({ status, userName }) {
   }
   if (status === 'unauthenticated') {
     return (
+      // <>
+      //   <Link href={'/login'} className="text-black inknut">Login</Link>
+      //   <Link href={'https://greek-tasty.order.app.hd.digital/menus'} className="bg-primary rounded text-white px-8 py-2 inknut">
+      //   Online bestellen
+      //   </Link>
+      // </>
       <>
         <Link href={'/login'} className="text-black inknut">Login</Link>
-        <Link href={'https://greek-tasty.order.app.hd.digital/menus'} className="bg-primary rounded text-white px-8 py-2 inknut">
-        Online bestellen
+        <Link href={'/register'} className="bg-primary rounded text-white px-8 py-2 inknut">
+          Register
         </Link>
       </>
     );
@@ -84,9 +90,20 @@ export default function Header() {
           <Link href={'/#about'}>Über Uns</Link>
           <Link href={'/#contact'}>Kontakt</Link>
         </nav>
-        <nav className="flex items-center gap-4">
+        {/* <nav className="flex items-center gap-4">
           <AuthLinks status={status} userName={userName}  maxLength={10}/>
           
+        </nav> */}
+        <nav className="flex items-center gap-4">
+          <AuthLinks status={status} userName={userName}  maxLength={10}/>
+          <Link href={'/cart'} className="relative">
+            <ShoppingCart />
+            {cartProducts?.length > 0 && (
+              <span className="absolute -top-2 -right-4 bg-primary text-white text-xs py-1 px-1 rounded-full leading-3">
+            {cartProducts.length}
+          </span>
+            )}
+          </Link>
         </nav>
       </div>
     </header>
