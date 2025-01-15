@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="hero md:mt-4">
-      <div className="py-8 md:py-12 relative">
+      <div className="py-8 md:py-8 relative">
         <h2 className="text-5xl neucha ">
         Eine Reise in die Schätze der griechischen <span></span>
           <span className="text-primary neucha">
@@ -32,8 +32,10 @@ export default function Hero() {
        
         </div>
       </div>
-      <div className="relative hidden md:block md:ml-20">
+      <div className="ml-12">
+      <div className=" hidden md:block bg-gray-200 p-4 rounded-lg hover:shadow-md hover:shadow-black/25 ">
         <Image src={'/food.jpg'} width={500} height={500} alt={'pizza'} />
+      </div>
       </div>
     </section>
   );

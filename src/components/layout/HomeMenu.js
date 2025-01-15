@@ -14,14 +14,14 @@ export default function HomeMenu() {
   }, []);
   return (
     <section className="">
-        <div className="text-center mb-8 mt-8 ">
+        <div className="text-center mb-8 mt-12 ">
           <SectionHeaders
             subHeader={'Schauen Sie sich'}
             mainHeader={
               <a>Unsere <span className="text-primary">Bestseller</span> an</a>
             } />
         </div>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4">
           <div className="bg-gray-200 p-4 rounded-lg group hover:bg-white hover:shadow-md hover:shadow-black/25 transition-all">
             <div className="item-center">
               <img src={'/food_1.png'} className="max-h-auto block mx-auto" alt="pizza"/>

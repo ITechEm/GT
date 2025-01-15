@@ -1,20 +1,17 @@
-## My footprint in this project
-This is a `full-stack` project created by dejwid and `modified by me`.
+## Footprint in this project
+This is a `Front-end` project created by `ITechEm`.
 
 ## Scope of this project
 
 ```bash
-✨ Understanding front-end and back-end development better. Having a FE and a BE that communicate,
-   helps me better to understand how an app works.
+✨ Understanding front-end development better.
 ```
 
 ## Technology Stack and Features
 
 ```bash
 
-｡🇯‌🇸‌‌ JavaScript for front-end and back-end
-💾 MongoDB for database
-☁️ AWS-S3 for storing files
+｡🇯‌🇸‌‌ JavaScript for front-end 
 🏭 GitHub for CI/CD
 🚀 Vercel for deployment and hosting
 
@@ -26,4 +23,4 @@ The easiest way to `deploy` my project was to use the [Vercel Platform](https://
 
 ## License
 
-The `gt` project is licensed under the terms of the MIT license.
+The `greek-tasty` project is licensed under the terms of the MIT license.
